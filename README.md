@@ -756,7 +756,7 @@ TODO
 * [《设计模式类图与示例》](https://github.com/ToryZhou/design-pattern)
 
 ## 应用场景
-* [《细数JDK里的设计模式》](http://blog.jobbole.com/62314/)
+* [《细数JDK里的设计模式》](https://www.cnblogs.com/winkey4986/p/5148953.html)
 	* 结构型模式：
 		* 适配器：用来把一个接口转化成另一个接口，如 java.util.Arrays#asList()。
 		* 桥接模式：这个模式将抽象和抽象操作的实现进行了解耦，这样使得抽象和实现可以独立地变化，如JDBC；
@@ -890,7 +890,7 @@ APM —  Application Performance Management
 ## 持续集成(CI/CD)
 
 * [《持续集成是什么？》](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)
-* [《8个流行的持续集成工具》](https://www.testwo.com/article/1170)
+* [《8个流行的持续集成工具》](http://www.51testing.com/html/74/n-3723774.html)
 
 ### Jenkins
 
@@ -1377,7 +1377,7 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 ## MySQL
 
 ### 原理
-* [《MySQL的InnoDB索引原理详解》](http://www.admin10000.com/document/5372.html)
+* [《MySQL的InnoDB索引原理详解》](https://blog.csdn.net/voidccc/article/details/40077329)
 
 * [《MySQL存储引擎－－MyISAM与InnoDB区别》](https://blog.csdn.net/xifeijian/article/details/20316775)
 	* 两种类型最主要的差别就是Innodb 支持事务处理与外键和行级锁
@@ -2000,12 +2000,12 @@ Java、Spring、Dubbo 优雅关闭方式。
   * 领域（Doamin）本质上就是问题域，比如一个电商系统，一个论坛系统等。
   * 界限上下文（Bounded Context）：阐述子域之间的关系，可以简单理解成一个子系统或组件模块。
   * 领域模型（Domain Model）：DDD的核心是建立（用通用描述语言、工具—领域通用语言）正确的领域模型；反应业务需求的本质，包括实体和过程；其贯穿软件分析、设计、开发 的整个过程；常用表达领域模型的方式：图、代码或文字；
-  * 领域通用语言：领域专家、开发设计人员都能立即的语言或工具。
+  * 领域通用语言：领域专家、开发设计人员都能理解的语言或工具。
   * 经典分层架构：用户界面/展示层、应用层、领域层、基础设施层，是四层架构模式。
   * 使用的模式：
     * 关联尽量少，尽量单项，尽量降低整体复杂度。
     * 实体（Entity）：领域中的唯一标示，一个实体的属性尽量少，少则清晰。
-    * 值对象（Value Object）：没有唯一标识，且属性值不可变，小二简单的对象，比如Date。
+    * 值对象（Value Object）：没有唯一标识，且属性值不可变，小而简单的对象，比如Date。
     * 领域服务（Domain Service）： 协调多个领域对象，只有方法没有状态(不存数据)；可以分为应用层服务，领域层服务、基础层服务。
     * 聚合及聚合根（Aggregate，Aggregate Root）：聚合定义了一组具有内聚关系的相关对象的集合；聚合根是对聚合引用的唯一元素；当修改一个聚合时，必须在事务级别；大部分领域模型中，有70%的聚合通常只有一个实体，30%只有2~3个实体；如果一个聚合只有一个实体，那么这个实体就是聚合根；如果有多个实体，那么我们可以思考聚合内哪个对象有独立存在的意义并且可以和外部直接进行交互；
     * 工厂（Factory）：类似于设计模式中的工厂模式。
